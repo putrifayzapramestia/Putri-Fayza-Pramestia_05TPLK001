@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Karyawan Meliput</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            margin: 0;
+            background-color: #0866f17c;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #4ebb57;
+            color: white;
+            position: fixed;
+            height: 100vh;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .sidebar img.logo {
+            width: 150px;
+            border-radius: 100%;
+            margin-bottom: 10px;
+        }
+        .sidebar h2 {
+            font-size: 20px;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #444;
+        }
+        .sidebar .menu-item {
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar .menu-item:hover {
+            background-color: #1d2a73;
+        }
+        .sidebar .menu-item i {
+            margin-right: 10px;
+        }
+        .sidebar .user-info {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #ddd;
+            border-bottom: 1px solid #444;
+            margin-bottom: 10px;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .content h1 {
+            color: #3646a0;
+            margin-bottom: 10px;
+        }
+        .add-button {
+            background-color: #4ebb57;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .add-button:hover {
+            background-color: #3ca448;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4ebb57;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+    <script>
+        function tambahDataMeliput() {
+            alert("Tombol Tambah Data Meliput diklik!");
+            // Anda bisa mengganti alert ini dengan kode lain seperti membuka form baru.
+        }
+    </script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="c:\Users\UseR\Pictures\download.jpg" alt="Logo" class="logo">
+        
+        <div class="user-info">
+            <p>Welcome, Putri Group</p>
+            <p>Administration</p>
+        </div>
+        <h2>PUTRI FAYZA GROUP</h2>
+        <a href="dashboard.html" class="menu-item"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="karyawan.html" class="menu-item"><i class="fas fa-user"></i> Karyawan</a>
+        <a href="jabatan.html" class="menu-item"><i class="fas fa-briefcase"></i> Jabatan</a>
+        <a href="divisi.html" class="menu-item"><i class="fas fa-sitemap"></i> Divisi</a>
+        <a href="absensi.html" class="menu-item"><i class="fas fa-calendar-check"></i> Absensi</a>
+        <a href="izin.html" class="menu-item"><i class="fas fa-envelope"></i> Izin</a>
+        <a href="lembur.html" class="menu-item"><i class="fas fa-clock"></i> Lembur</a>
+    </div>
+
+    <div class="content">
+        <h1>Data Karyawan Meliput</h1>
+        
+        <!-- Tombol Tambah Data Meliput -->
+        <button class="add-button" onclick="tambahDataMeliput()"><i class="fas fa-plus"></i> Tambah Data Meliput</button>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Izin</th>
+                    <th>Tanggal</th>
+                    <th>Jam</th>
+                    <th>Keterangan</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Putri Fayza Pramestia</td>
+                    <td>Sakit</td>
+                    <td>01-11-2024</td>
+                    <td>08:00</td>
+                    <td>Periksa kesehatan</td>
+                    <td>Menunggu Konfirmasi</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Faturrahman</td>
+                    <td>Cuti</td>
+                    <td>05-12-2024</td>
+                    <td>08:15</td>
+                    <td>Acara keluarga</td>
+                    <td>Menunggu Konfirmasi</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Didy</td>
+                    <td>Izin</td>
+                    <td>03-11-2024</td>
+                    <td>08:30</td>
+                    <td>Urusan pribadi</td>
+                    <td>Menunggu Konfirmasi</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Budiaman</td>
+                    <td>Cuti</td>
+                    <td>20-11-2024</td>
+                    <td>09:00</td>
+                    <td>Liburan</td>
+                    <td>Menunggu Konfirmasi</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Rizki</td>
+                    <td>Sakit</td>
+                    <td>01-11-2024</td>
+                    <td>08:45</td>
+                    <td>Pemeriksaan medis</td>
+                    <td>Menunggu Konfirmasi</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
